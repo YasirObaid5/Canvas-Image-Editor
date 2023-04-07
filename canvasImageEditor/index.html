@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="editor" id="editor">
+        <div class="toolbar">
+            <div class="toolbar-item">
+                <input type="file" id="imageFileInput" accept="image/*">
+            </div>
+            <div class="toolbar-item">
+                <label class="tool-label" for="saturation">Saturation</label>
+                <input class="tool-label" type="range" id="saturation" min="0" max="200" value="0">
+            </div>
+            <div class="toolbar-item">
+                <label class="tool-label" for="blur">Blur</label>
+                <input class="tool-label" type="range" id="blur" min="0" max="25" value="0">
+            </div>
+            <div class="toolbar-item">
+                <label class="tool-label" for="hue">Hue</label>
+                <input class="tool-label" type="range" id="hue" min="0" max="200" value="0">
+            </div>
+            <div class="toolbar-item">
+                <label class="tool-label" for="inversion">Inversion</label>
+                <input class="tool-label" type="range" id="inversion" min="0" max="200" value="0">
+            </div>
+                
+            <div class="toolbar-item">
+                <label class="tool-label" for="brightness">Brightness</label>
+                <input class="tool-label" type="range" id="brightness" min="0" max="200" value="0">
+            </div>
+            <div class="toolbar-item">
+                <label class="tool-label" for="contrast">Contrast</label>
+                <input class="tool-label" type="range" id="contrast" min="0" max="200" value="0">
+            </div>
+            <div class="toolbar-item">
+                <label class="tool-label" for="grayscale">Grayscale</label>
+                <input class="tool-label" type="range" id="grayscale" min="1" max="100" value="0">
+            </div>
+            <div class="toolbar-item">
+                <label class="tool-label" for="sepia">Sepia</label>
+                <input class="tool-label" type="range" id="sepia" min="0" max="200" value="0">
+            </div>
+            <div class="toolbar-item">
+                <label class="tool-label" for="opacity">Opacity</label>
+                <input class="tool-label" type="range" id="opacity" min="0" max="200" value="0">
+            </div>            
+    </div>
+    <div class="image-area">
+        <canvas id="canvas" height="1000" width="1000"></canvas>
+        <button id="reset" type="reset" id="reset">Reset</button>
+        <button id="download" id="download" onclick="Download_btn()">Download</button>
+        
+    </div>
+    
+</body>
+</html>
